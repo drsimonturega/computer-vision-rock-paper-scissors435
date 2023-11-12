@@ -24,6 +24,11 @@ git remote set-url origin https://TOKENHERE@github.com/drsimonturega/computer-vi
 ```
 The image recogniton model was prodeuced using https://teachablemachine.withgoogle.com/ to create a model with four classes Rock, Paper, Sissor and nothing. This gave a keras_model.h5 and index.txt files for use with python code later in the project.
 
+#### Milestone 3
+
+Set up a conda environment com_vis_rps using the comand ```conda create -n com_vis_rps python=3.8```
+
+The conda enviroment was activated using ```conda activate com_vis_rps``` and deactivated using ```conda deactivate```. The despendances opencv-python, tensorflow, and ipykernel. A dependancy requirements file "requirements.txt"  was made using the ```pip list > requirements.txt``` comand this can be used to install the required depandances in futhure using the ```pip install requirements.txt``` I suspect this file will need updating.
 
 ### Functions
 
