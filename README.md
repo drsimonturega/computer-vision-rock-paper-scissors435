@@ -32,6 +32,7 @@ The conda enviroment was activated using ```conda activate com_vis_rps``` and de
 
 ### Functions
 
+Functions have been coded for user and computer input for for the RPS game these are ```get_user_choice()``` and ```get_computer_choice()```. In the ```get_user_choice()``` I made use of a while lood the gets exited with a break statment, this is something I struggled with when it was first suggested but now it looks rather neat.
 
 ### Classes
 
