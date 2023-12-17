@@ -51,7 +51,8 @@ Functions have been coded for user and computer input for for the RPS game these
 
 ![Alt](/woc_001.png "get_computer_choice()")
 
-The ```get_prediction()``` replaced the ```get_user_choice()``` in the camera version of the game. The function get_winner() was written to determin the winner using the computer choice and the player choice. This function also conatined variblr that help calculate the best out of three winner.
+The ```get_prediction()``` replaced the ```get_user_choice()``` in the camera version of the game. The function get_winner() was written to determin the winner using the computer choice and the player choice. This function also conatined varibles that help calculate the best out of three winner.
 
 
 ### Running instructions
+python3 camera_rps.py
