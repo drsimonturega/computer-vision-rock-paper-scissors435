@@ -44,6 +44,7 @@ if (time.time() - start_time) >= 3 or cv2.waitKey(1) & 0xFF == ord('c'):
             self.weapon_of_choice= self.weapon_list[np.argmax(np.array(prediction[0]))]
             print(f'You chose {self.weapon_of_choice}')
 ```
+The python function ```play()``` runs the game.
 
 ### Functions
 
