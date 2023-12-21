@@ -34,7 +34,17 @@ The conda enviroment was activated using ```conda activate com_vis_rps``` and de
 
 A python script was written that selects a weapon; rock paper or sissors for the computer and weapon weapon; rock paper or sissors for the user. The winner is then dermined using three if elif else statements. The game was written as a class including a __init__ method to initialse the class varibles bound an the instance of the game.
 ![Alt](/classinit.png "get_computer_choice()")
+A working version of the game was written that used text input to get the user choice.
 
+#### Milestone 5
+A version of the game that uses the camera to select the players choice of weapon. The game was expanded to make it best out of three rounds of RPS. It was complicated covert the out put of the model into a list that the inital verson was quite verbose but I shortend it down in code opitimisation.
+```
+if (time.time() - start_time) >= 3 or cv2.waitKey(1) & 0xFF == ord('c'):
+            prediction = np.ndarray.tolist(prediction)
+            self.weapon_of_choice= self.weapon_list[np.argmax(np.array(prediction[0]))]
+            print(f'You chose {self.weapon_of_choice}')
+```
+The python function ```play()``` runs the game.
 
 ### Functions
 
@@ -42,17 +52,8 @@ Functions have been coded for user and computer input for for the RPS game these
 
 ![Alt](/woc_001.png "get_computer_choice()")
 
-### Classes
-
-#### Teachable machine
-
-##### Rock
-
-##### Paper
-
-##### Sissor
-
-##### Nothing
+The ```get_prediction()``` replaced the ```get_user_choice()``` in the camera version of the game. The function get_winner() was written to determin the winner using the computer choice and the player choice. This function also conatined varibles that help calculate the best out of three winner.
 
 
 ### Running instructions
+python3 camera_rps.py
